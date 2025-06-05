@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <title>ML - Rekomendasi Game</title>
+  <link rel="stylesheet" href="../style.css" />
+  <link rel="shortcut icon" href="../img/GV.png" type="image/x-icon">
+  <style>
+    body {
+      background-image: url('../img/ml-bg.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      position: relative;
+      color: #fff;
+    }
+
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background-color: rgba(0, 0, 0, 0.75);
+      z-index: -1;
+    }
+
+    main {
+      background: rgba(30, 30, 30, 0.8);
+      padding: 2rem;
+      border-radius: 12px;
+      max-width: 800px;
+      margin: 2rem auto;
+      box-shadow: 0 0 20px #00ffc3aa;
+    }
+  </style>
+</head>
+<body data-game="ml">
+  <header>
+    <nav>
+      <button onclick="location.href='../index.html#home'">Home</button>
+    </nav>    
+    <h1>ML (Mobile Legends)</h1>
+  </header>
+
+  <main>
+    <h2>Deskripsi Game</h2>
+    <p>
+      <strong>Mobile Legends: Bang Bang</strong> atau ML adalah game MOBA (Multiplayer Online Battle Arena) yang dikembangkan oleh Moonton. Game ini sangat populer di Asia Tenggara, khususnya Indonesia, dan menjadi salah satu game mobile paling kompetitif saat ini.
+    </p>
+    <p>
+      Dalam game ini, dua tim berisi lima pemain bertarung di medan pertempuran klasik 5v5. Setiap pemain memilih hero dengan peran berbeda seperti tank, marksman, mage, assassin, support, atau fighter. Tujuan utama adalah menghancurkan turret musuh dan menguasai base mereka.
+    </p>
+    <p>
+      ML memiliki kontrol yang responsif, grafik menarik, serta update rutin dengan hero dan skin baru. Selain mode klasik dan ranked, ada juga mode lain seperti Brawl, Arcade, dan bahkan turnamen e-sports tingkat dunia seperti M-Series.
+    </p>
+    <p><strong>Genre:</strong> MOBA, Action, Competitive, Multiplayer</p>
+
+    <div style="margin: 1rem 0;">
+      <strong>⭐ Rating rata-rata:</strong> <span id="avg-rating">Belum ada</span><br />
+      <strong>🎮 Pemain aktif sekarang:</strong> <span id="player-count">900.000+</span>
+    </div>
+
+    <h3>Berikan Rating & Komentar</h3>
+    <select id="rating">
+      <option value="1">⭐ 1</option>
+      <option value="2">⭐⭐ 2</option>
+      <option value="3">⭐⭐⭐ 3</option>
+      <option value="4">⭐⭐⭐⭐ 4</option>
+      <option value="5" selected>⭐⭐⭐⭐⭐ 5</option>
+    </select>
+
+    <br /><br />
+    <textarea id="comment" placeholder="Tulis komentarmu..." rows="4"></textarea><br />
+    <button id="submit-btn">Kirim</button>
+
+    <h4 style="margin-top: 2rem;">Komentar Orang Lain:</h4>
+    <ul id="comments-list"></ul>
+  </main>
+
+  <script src="../detail.js"></script>
+</body>
+</html>

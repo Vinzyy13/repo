@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <title>PUBG - Rekomendasi Game</title>
+  <link rel="stylesheet" href="../style.css" />
+  <link rel="shortcut icon" href="../img/GV.png" type="image/x-icon">
+  <style>
+    body {
+      background-image: url('../img/pubg-bg.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      position: relative;
+      color: #fff;
+    }
+
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background-color: rgba(0, 0, 0, 0.75);
+      z-index: -1;
+    }
+
+    main {
+      background: rgba(30, 30, 30, 0.8);
+      padding: 2rem;
+      border-radius: 12px;
+      max-width: 800px;
+      margin: 2rem auto;
+      box-shadow: 0 0 20px #00ffc3aa;
+    }
+  </style>
+</head>
+<body data-game="pubg">
+  <header>
+    <nav>
+        <button onclick="location.href='../index.html#home'">Home</button>
+    </nav>
+    <h1>PUBG</h1>
+  </header>
+
+  <main>
+    <h2>Deskripsi Game</h2>
+    <p>
+      PlayerUnknown's Battlegrounds (PUBG) adalah game battle royale yang dikembangkan oleh PUBG Corporation, anak perusahaan dari Bluehole. Dalam game ini, hingga 100 pemain terjun ke sebuah pulau besar dan bertarung untuk menjadi yang terakhir bertahan hidup. Pemain harus mencari senjata, perlengkapan, dan kendaraan sambil menghindari zona berbahaya yang terus menyusut.
+    </p>
+    <p>
+      PUBG dikenal sebagai pelopor genre battle royale modern dan telah menginspirasi banyak game sejenis. Dengan gameplay yang realistis dan intens, PUBG menawarkan pengalaman tembak-menembak yang tak tertandingi, baik dalam mode solo, duo, maupun squad.
+    </p>
+    <p>
+      Game ini memiliki berbagai peta dengan karakteristik unik seperti Erangel, Miramar, Sanhok, dan Vikendi. Sistem loot yang dinamis, senjata yang beragam, dan taktik bertahan hidup membuat setiap pertandingan terasa berbeda dan menantang.
+    </p>
+    <p>
+      PUBG tersedia di berbagai platform termasuk PC, konsol, dan versi mobile. Versi mobile-nya sangat populer secara global, dengan komunitas aktif dan turnamen eSports berskala besar seperti PMGC (PUBG Mobile Global Championship).
+    </p>
+    <p><strong>Genre:</strong> Battle Royale, Shooter, Survival</p>
+
+    <div style="margin: 1rem 0;">
+      <strong>⭐ Rating rata-rata:</strong> <span id="avg-rating">Belum ada</span><br />
+      <strong>🎮 Pemain aktif sekarang:</strong> <span id="player-count">500.000+</span>
+    </div>
+
+    <h3>Berikan Rating & Komentar</h3>
+    <select id="rating">
+      <option value="1">⭐ 1</option>
+      <option value="2">⭐⭐ 2</option>
+      <option value="3">⭐⭐⭐ 3</option>
+      <option value="4">⭐⭐⭐⭐ 4</option>
+      <option value="5" selected>⭐⭐⭐⭐⭐ 5</option>
+    </select>
+
+    <br /><br />
+    <textarea id="comment" placeholder="Tulis komentarmu..." rows="4"></textarea><br />
+    <button id="submit-btn">Kirim</button>
+
+    <h4 style="margin-top: 2rem;">Komentar Orang Lain:</h4>
+    <ul id="comments-list"></ul>
+  </main>
+
+  <script src="../detail.js"></script>
+</body>
+</html>
