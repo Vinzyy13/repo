@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <title>Free Fire Max - Rekomendasi Game</title>
+  <link rel="stylesheet" href="../style.css" />
+  <link rel="shortcut icon" href="../img/GV.png" type="image/x-icon">
+  <style>
+    body {
+      background-image: url('../img/ff-bg.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      position: relative;
+      color: #fff;
+    }
+
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background-color: rgba(0, 0, 0, 0.75);
+      z-index: -1;
+    }
+
+    main {
+      background: rgba(30, 30, 30, 0.8);
+      padding: 2rem;
+      border-radius: 12px;
+      max-width: 800px;
+      margin: 2rem auto;
+      box-shadow: 0 0 20px #00ffc3aa;
+    }
+  </style>
+</head>
+<body data-game="ff">
+  <header>
+    <nav>
+      <button onclick="location.href='../index.html#home'">Home</button>
+    </nav>    
+    <h1>Free Fire Max</h1>
+  </header>
+
+  <main>
+    <h2>Deskripsi Game</h2>
+    <p>
+      <strong>Free Fire Max</strong> adalah versi grafis tinggi dari Free Fire, game battle royale yang sangat populer di kalangan pengguna mobile. Game ini menempatkan 50 pemain dalam satu pulau dan bertarung hingga hanya satu yang tersisa.
+    </p>
+    <p>
+      Dengan peningkatan visual dan efek yang lebih realistis, Free Fire Max memberikan pengalaman yang lebih imersif tanpa mengorbankan performa. Cocok bagi pemain yang ingin tampilan lebih baik sambil tetap menikmati gameplay cepat dan seru.
+    </p>
+    <p><strong>Genre:</strong> Battle Royale, Action, Shooter</p>
+
+    <div style="margin: 1rem 0;">
+      <strong>⭐ Rating rata-rata:</strong> <span id="avg-rating">Belum ada</span><br />
+      <strong>🎮 Pemain aktif sekarang:</strong> <span id="player-count">1.000.000+</span>
+    </div>
+
+    <h3>Berikan Rating & Komentar</h3>
+    <select id="rating">
+      <option value="1">⭐ 1</option>
+      <option value="2">⭐⭐ 2</option>
+      <option value="3">⭐⭐⭐ 3</option>
+      <option value="4">⭐⭐⭐⭐ 4</option>
+      <option value="5" selected>⭐⭐⭐⭐⭐ 5</option>
+    </select>
+
+    <br /><br />
+    <textarea id="comment" placeholder="Tulis komentarmu..." rows="4"></textarea><br />
+    <button id="submit-btn">Kirim</button>
+
+    <h4 style="margin-top: 2rem;">Komentar Orang Lain:</h4>
+    <ul id="comments-list"></ul>
+  </main>
+
+  <script type="module" src="../detail.js"></script>
+</body>
+</html>

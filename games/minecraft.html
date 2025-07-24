@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <title>Minecraft - Rekomendasi Game</title>
+  <link rel="stylesheet" href="../style.css" />
+  <link rel="shortcut icon" href="../img/GV.png" type="image/x-icon">
+  <style>
+    body {
+      background-image: url('../img/minecraft-bg.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      position: relative;
+      color: #fff;
+    }
+
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background-color: rgba(0, 0, 0, 0.75);
+      z-index: -1;
+    }
+
+    main {
+      background: rgba(30, 30, 30, 0.8);
+      padding: 2rem;
+      border-radius: 12px;
+      max-width: 800px;
+      margin: 2rem auto;
+      box-shadow: 0 0 20px #00ffc3aa;
+    }
+  </style>
+</head>
+<body data-game="minecraft">
+  <header>
+    <nav>
+      <button onclick="location.href='../index.html#home'">Home</button>
+    </nav>    
+    <h1>Minecraft</h1>
+  </header>
+
+  <main>
+    <h2>Deskripsi Game</h2>
+    <p>
+      Minecraft adalah game sandbox legendaris yang dikembangkan oleh Mojang Studios. Dalam game ini, pemain diberikan kebebasan tanpa batas untuk menjelajahi dunia yang luas dan dihasilkan secara acak, dibangun sepenuhnya dari blok-blok tiga dimensi. Pemain bisa mengumpulkan sumber daya, membangun rumah atau kota, membuat peralatan dan senjata, serta bertahan hidup dari monster yang muncul di malam hari.
+    </p>
+    <p>
+      Dengan dua mode utama yaitu <strong>Survival</strong> dan <strong>Creative</strong>, Minecraft memungkinkan pemain bermain sesuai gaya masing-masing — bertahan hidup melawan tantangan, atau membangun dunia impian tanpa batasan. Selain itu, game ini mendukung multiplayer online yang memungkinkan kolaborasi membangun atau berpetualang bersama teman.
+    </p>
+    <p>
+      Minecraft bukan hanya sekadar game, tapi juga platform kreatif dan edukatif yang digunakan di sekolah-sekolah, tempat para pemain muda belajar logika, kolaborasi, bahkan pemrograman. Dunia Minecraft terus berkembang melalui update resmi maupun mod buatan komunitas yang sangat aktif.
+    </p>
+    <p><strong>Genre:</strong> Sandbox, Survival, Adventure, Creative</p>
+
+    <div style="margin: 1rem 0;">
+      <strong>⭐ Rating rata-rata:</strong> <span id="avg-rating">Belum ada</span><br />
+      <strong>🎮 Pemain aktif sekarang:</strong> <span id="player-count">150.000+</span>
+    </div>
+
+    <h3>Berikan Rating & Komentar</h3>
+    <select id="rating">
+      <option value="1">⭐ 1</option>
+      <option value="2">⭐⭐ 2</option>
+      <option value="3">⭐⭐⭐ 3</option>
+      <option value="4">⭐⭐⭐⭐ 4</option>
+      <option value="5" selected>⭐⭐⭐⭐⭐ 5</option>
+    </select>
+
+    <br /><br />
+    <textarea id="comment" placeholder="Tulis komentarmu..." rows="4"></textarea><br />
+    <button id="submit-btn">Kirim</button>
+
+    <h4 style="margin-top: 2rem;">Komentar Orang Lain:</h4>
+    <ul id="comments-list"></ul>
+  </main>
+
+  <script type="module" src="../detail.js">
+    function goToSection(section) {
+      window.location.href = `../index.html#${section}`;
+    }
+  </script>
+</body>
+</html>
